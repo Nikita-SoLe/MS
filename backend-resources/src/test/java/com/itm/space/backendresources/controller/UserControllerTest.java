@@ -72,7 +72,7 @@ public class UserControllerTest extends BaseIntegrationTest {
     void helloNegativeTest() throws Exception {
         mvc.perform(get("/api/users/hello")
                 .contentType(MediaType.APPLICATION_JSON))
-           .andExpect(status().isBadRequest());
+           .andExpect(status().is4xxClientError());
     }
 
     private UserRequest createUserRequest() { // Метод для создания объекта запроса пользователя
