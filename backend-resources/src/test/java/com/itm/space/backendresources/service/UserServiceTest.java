@@ -11,11 +11,9 @@ import org.keycloak.admin.client.Keycloak;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.ws.rs.BadRequestException;
-import javax.ws.rs.NotFoundException;
+
 import java.util.UUID;
 
-import static org.assertj.core.api.Assertions.fail;
 
 
 public class UserServiceTest extends BaseIntegrationTest {
